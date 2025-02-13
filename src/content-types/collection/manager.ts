@@ -73,6 +73,8 @@ export class CollectionTypeManager {
       url = URLHelper.appendQueryParams(url, queryParams);
     }
 
+    debug('full url', url)
+
     const response = await this._httpClient.get(url);
     const json = await response.json();
 
