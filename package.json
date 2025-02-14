@@ -70,7 +70,13 @@
     "watch": "rollup --config rollup.config.mjs --watch --failAfterWarnings",
     "prepack": "pnpm exec ./scripts/pre-pack.sh"
   },
-  "devDependencies": {
+  "packageManager": "pnpm@9.1.0",
+  "engines": {
+    "node": ">=20.18.2 <=22.x.x"
+  },
+  "dependencies": {
+    "debug": "4.4.0",
+    "qs": "6.14.0",
     "@commitlint/cli": "19.6.1",
     "@commitlint/config-conventional": "19.6.0",
     "@commitlint/types": "19.5.0",
@@ -95,13 +101,5 @@
     "rollup": "4.31.0",
     "ts-jest": "29.2.5",
     "typescript": "5.7.3"
-  },
-  "packageManager": "pnpm@9.1.0",
-  "engines": {
-    "node": ">=20.18.2 <=22.x.x"
-  },
-  "dependencies": {
-    "debug": "4.4.0",
-    "qs": "6.14.0"
   }
 }
